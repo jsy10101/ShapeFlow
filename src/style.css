@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  button {
+    @apply mt-2.5 ml-2.5 w-20 py-0.5 px-2 bg-gray-200
+           border border-gray-600 rounded
+           hover:bg-gray-300 active:bg-gray-200
+           disabled:bg-lightgrey disabled:border-grey
+           disabled:text-grey disabled:hover:bg-lightgrey;
+  }
+  select {
+    @apply mt-2.5 ml-2.5 h-[30px] px-2
+           border border-gray-600 rounded;
+  }
+  input {
+    @apply pl-1 border border-black rounded-sm;
+  }
+}
